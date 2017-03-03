@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script   type="text/javascript">
+          function cross( e){
+		// var state = {
+        //    "canBeAnything": true
+        //    }   ;
+        //    history.pushState(state, "New Title", "/"+e);
+          var socket = new WebSocket("ws://localhost:4567/helloSocket?action="+e);
+              socket.onopen = function() {
+          };
+          var element = document.getElementById("info");
+
+
+          socket.onmessage = function(event) {
+            element.innerHTML  = event.data;
+          }
+
+        }
+
+        function feedback()
+        {
+            var element = document.getElementById("info");
+            var comment= document.getElementById("comment1").value ;
+            var name=document.getElementById("name1").value;
+            var feedback = name+"<==>"+ comment;
+            var socket2 = new WebSocket("ws://localhost:4567/feedback?param="+feedback);
+            socket2.onopen = function()
+            {
+
+
+            };
+
+            socket2.onmessage = function(event) {
+             element.innerHTML  = event.data;
+            }
+        }
+        </script>
+
+    <style>
+      @font-face {
+        font-family: franklin;
+        src: url(public/font/FranklinGothicHeavy.ttf);
+      }
+      @font-face {
+        font-family: glyphicons;
+        src: url(public/font/glyphicons-halflings-regular.ttf);
+      }
+      @font-face {
+        font-family: choplin;
+        src: url(public/font/Choplin-Medium-DEMO.otf);
+      }
+      @font-face {
+              font-family: museosans;
+              src: url(public/font/MuseoSansCyrl.otf);
+      }
+      @font-face {
+              font-family: museosans2;
+              src: url(public/font/MuseoSansCyrl_3.otf.otf);
+      }
+      body {
+              background: url(public/images/orig_161929.jpg) repeat-y,
+              #fc0 url(images/bg-right.png) repeat-y 100% 0;;
+              background-size: cover;
+      }
+      </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://roman1.technology">ROMAN1</a>
+        </div>
+        <ul class="nav navbar-nav" width = 100%>
+            <li><a  onclick="cross('info')" style="cursor: pointer">Инфо</a></li>
+            <li><a  onclick="cross('faq')"  style="cursor: pointer">Услуги</a></li>
+            <li><a  onclick="cross('faq')"  style="cursor: pointer">FAQ</a></li>
+            <li><a  onclick="cross('contacts')" style="cursor: pointer">Контакты</a></li>
+            <li><a  onclick="cross('prices')" style="cursor: pointer">Цены</a></li>
+            <li><a  onclick="cross('request')" style="cursor: pointer">Оставить заявку</a></li>
+            <li><a  onclick="cross('feedback')" style="cursor: pointer" >Отзывы</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="well well-lg" id="info"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+<li><a  onclick="cross()" style="cursor: pointer">Contact</a></li>

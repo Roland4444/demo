@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92220492-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>   
+
+  <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42905729 = new Ya.Metrika({
+                    id:42905729,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/42905729" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <title>ИТ Стартап Roman1 - It startup Roman1,заказ и продвижение интернет сайтов, ремонт техники, ИТ консультации</title>
+  <script src="https://use.fontawesome.com/58d308af1d.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script   type="text/javascript">
+         function cross( e){
+         var socket = new WebSocket("ws://roman1.technology/helloSocket?action="+e);
+             socket.onopen = function() {
+         };
+         var element = document.getElementById("info");
+         socket.onmessage = function(event) {
+           element.innerHTML  = event.data;
+         }
+       }
+
+       function feedback()
+       {
+           var element = document.getElementById("info");
+           var comment= document.getElementById("comment1").value ;
+           var name=document.getElementById("name1").value;
+           var feedback = name+"<==>"+ comment;
+           var socket2 = new WebSocket("ws://roman1.technology/feedback?param="+feedback);
+           socket2.onopen = function()
+           {
+           };
+
+           socket2.onmessage = function(event) {
+           element.innerHTML  = event.data;
+           }
+       }
+
+       function request()
+       {
+
+           var element = document.getElementById("info");
+           var comment= document.getElementById("reqdetails").value ;
+           var email=document.getElementById("email").value;
+           if (email.indexOf("@") === -1) {
+                alert("Введите корректный адрес электронной почты!");
+                return ;
+           }
+           var request = email+"<==>"+ comment;
+           alert(request);
+           var socket3 = new WebSocket("ws://roman1.technology/request?param="+request);
+           socket3.onopen = function()
+           {
+           };
+
+           socket3.onmessage = function(event) {
+           element.innerHTML  = event.data;
+           }
+       }
+       </script>
+
+    <style>
+      @font-face {
+        font-family: franklin;
+        src: url(public/font/FranklinGothicHeavy.ttf);
+      }
+      @font-face {
+        font-family: glyphicons;
+        src: url(public/font/glyphicons-halflings-regular.ttf);
+      }
+      @font-face {
+        font-family: choplin;
+        src: url(public/font/Choplin-Medium-DEMO.otf);
+      }
+      @font-face {
+              font-family: museosans;
+              src: url(public/font/MuseoSansCyrl.otf);
+      }
+      @font-face {
+              font-family: museosans2;
+              src: url(public/font/MuseoSansCyrl_3.otf.otf);
+      }
+      body {
+              background: url(public/images/HD-Technology-Wallpaper-5.jpg);
+            background-repeat: repeat-y;
+              background-size: cover;
+      }
+      </style>
+</head>
+<body>
+
+<nav class="navbar-inverse navbar-default" role="navigation">
+    <div class="container-fluid"  >
+        <!-- Название компании и кнопка, которая отображается для мобильных устройств группируются для лучшего отображения при свертывании -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://roman1.technology/">ROMAN1</a>
+        </div>
+
+        <!-- Группируем ссылки, формы, выпадающее меню и прочие элементы -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+            </ul>
+            <ul class="nav navbar-nav" width = 100%>
+                <li><a  onclick="cross('info')" style="cursor: pointer; ">Инфо</a></li>
+                <li><a  onclick="cross('faq')"  style="cursor: pointer; ">FAQ</a></li>
+                <li><a  onclick="cross('contacts')" style="cursor: pointer; ">Контакты</a></li>
+                <li><a  onclick="cross('portfolio')" style="cursor: pointer; " >Портфолио</a></li>
+                <li><a  onclick="cross('prices')" style="cursor: pointer; ">Цены</a></li>
+                <li><a  onclick="cross('request')" style="cursor: pointer; ">Оставить заявку</a></li>
+                <li><a  onclick="cross('feedback')" style="cursor: pointer; " >Отзывы</a></li>
+            </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<div class="well well-lg" id="info"><h3>И снова здравствуйте! Добро пожаловать на обновленный сайт проекта R1. С помощью данного сервиса вы можете заказать для себя разработку любого современного сайта,
+    интернет магазина, в общем для решения любого вопроса в области ИТ. Также если Вы из города Астрахань возможен ремонт компьютерной техники, такие как ноутбуки, компьютеры, заказ и консультация по подбору комплектующих. За подробностями прощу в FAQ</h3></div>
+<div id="repost" style="position: absolute; right: 0;  text-align:right;" >
+    <script type="text/javascript">
+
+document.write(VK.Share.button());
+
+</script>
+
+
+</div>
+</body>
+</html>
