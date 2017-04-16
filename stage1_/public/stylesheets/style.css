@@ -23,31 +23,35 @@
 
 
 #info{
- background-color: white;
+
+ background-color: #32dc3b;
 font-family: museosans;
-color: #3399ff;
+color: #ffffff;
 }
 #info a {
-  color: blue;
+  color: #f8fff4;
    }
 #info a:link {
-    color: blue;
+    color: #fafbff;
 }
     /* visited link */
 #info a:visited {
-    color: blue;
+    color: #fef9ff;
 }
 
     /* mouse over link */
 #info a:hover {
-    color: blue;
+    color: #fffefa;
 }
 
     /* selected link */
 #info a:active {
-    color: blue;
+    color: #fffaf5;
 }
+ #info ul{
+list-style: none;
 
+ }
 
 #bgimg {
     z-index: -1;
@@ -60,7 +64,7 @@ color: #3399ff;
 .navbar-brand  {
 
     border: none;
-    color: #38C4F2;
+    color: #f2e613;
     padding: 10px 22px;
     color: #123456;
     background-color: #000000;
@@ -68,7 +72,7 @@ color: #3399ff;
 }
 
     .container-fluid  {
-    background-color: #3399ff;
+    background-color: #ff5125;
     border-color: #ffffff;
 }
 
@@ -87,4 +91,71 @@ color: #3399ff;
 
 .jumbotron {
     background-color: #ffffff;
+    color: #5d53b8;
 }
+
+  #footer {
+      background-color: #1a3fff;
+      text-align: center;
+      width:100%;
+      bottom:0;
+      left:0;
+
+  }
+  #footer ul { list-style: none; }
+  #footer a {
+      font-family: sans-serif;
+      font-size: 100%;
+      text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  }
+  #footer a:link {
+      color: #fbf4ff;
+  }
+  /* visited link */
+  #footer a:visited {
+      color: #fbfdff;
+  }
+
+  /* mouse over link */
+  #footer a:hover {
+      color: #fef6ff;
+  }
+
+  /* selected link */
+  #footer a:active {
+      color: #fff7fb;
+  }
+    #footer h5{
+        color: white;
+
+    }
+
+
+  .site-footer, .page-wrap:after {
+
+  }
+  .site-footer {
+      background: orange;
+  }
+  .footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 165px;
+      background-color: #1a3fff;
+  }
+
+
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+
+  .container {
+      width: auto;
+      max-width: 680px;
+      padding: 0 15px;
+  }
+  .container .text-muted {
+      margin: 20px 0;
+  }

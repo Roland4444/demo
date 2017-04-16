@@ -61,7 +61,7 @@
          if (fdbck === true){
             fdbck=false;
             var elem=document.getElementById('feedbacks');
-            elem.parentNode.removeChild(elem);
+       //     elem.parentNode.removeChild(elem);
            }
            }
 
@@ -121,17 +121,17 @@
        function prices(){
            removefed();
            var element = document.getElementById("info");
-           element.innerHTML  = "<ul><li><h3>Установка и настройка Linux  	=>  1000 <i class=\"fa fa-ruble\"></i></h3></li>" +
-               			"<li><h3>Установка чистой windows (с комплектом необходимых драйверов) => 900 <i class=\"fa fa-ruble\"></i></h3></li>" +
-               			"<li><h3>Переустановка Windows со всем набором программ и данных => 1150 <i class=\"fa fa-ruble\"></i> </h3></li>" +
-               			"<li><h3>Установка офисного пакета => 300  <i class=\"fa fa-ruble\"></i></h3> </li>" +
-               			"<li><h3>Установка антивируса Avast free => 300  <i class=\"fa fa-ruble\"></i></h3> </li>" +
-               			"<li><h3>Сканирование на вирусы и удаление баннеров  => 400 <i class=\"fa fa-ruble\"></i> </h3></li>" +
-               			"<li><h3>Оптимизацизация производительности => 350  <i class=\"fa fa-ruble\"></i></h3></li>" +
-               			"<li><h3>Аппаратный разгон (если возможен ) => 800  <i class=\"fa fa-ruble\"></i> </h3></li>" +
-               			"<li><h3>Чистка кулера ноута, обновление термопасты => 800  <i class=\"fa fa-ruble\"></i></h3></li>" +
-               			"<li><h3>Замена матрицы ноутбука(чисто работа за вычетом материала) => 1250  <i class=\"fa fa-ruble\"></i></h3></li>"+
-"<l1><h2>На все работы дается гарантия 6 месяцев!</h2></ul>"
+           element.innerHTML  = "<ul><li><h4>Установка и настройка Linux  	=>  1000 <i class=\"fa fa-ruble\"></i></h4></li>" +
+               			"<li><h4>Установка чистой windows (с комплектом необходимых драйверов) => 900 <i class=\"fa fa-ruble\"></i></h4></li>" +
+               			"<li><h4>Переустановка Windows со всем набором программ и данных => 1150 <i class=\"fa fa-ruble\"></i> </h4></li>" +
+               			"<li><h4>Установка офисного пакета => 300  <i class=\"fa fa-ruble\"></i></h4> </li>" +
+               			"<li><h4>Установка антивируса Avast free => 300  <i class=\"fa fa-ruble\"></i></h4> </li>" +
+               			"<li><h4>Сканирование на вирусы и удаление баннеров  => 400 <i class=\"fa fa-ruble\"></i> </h4></li>" +
+               			"<li><h4>Оптимизацизация производительности => 350  <i class=\"fa fa-ruble\"></i></h4></li>" +
+               			"<li><h4>Аппаратный разгон (если возможен ) => 800  <i class=\"fa fa-ruble\"></i> </h4></li>" +
+               			"<li><h4>Чистка кулера ноута, обновление термопасты => 800  <i class=\"fa fa-ruble\"></i></h4></li>" +
+               			"<li><h4>Замена матрицы ноутбука(чисто работа за вычетом материала) => 1250  <i class=\"fa fa-ruble\"></i></h4></li>"+
+"<l1><h3>На все работы дается гарантия 6 месяцев!</h3></ul>"
        }
 
         function info() {
@@ -252,7 +252,6 @@ background-attachment: fixed;
             <ul class="nav navbar-nav" width = 100% >
                 <li><a  class="link_" onclick="info()" style="cursor: pointer; color: white;">Инфо</a></li>
                 <li><a  class="link_" onclick="faq()"  style="cursor: pointer; color: white;">FAQ</a></li>
-                <li><a  class="link_" onclick="contacts()" style="cursor: pointer; color: white;">Контакты</a></li>
                 <li><a  class="link_" onclick="portfolio()" style="cursor: pointer; color: white;" >Портфолио</a></li>
                 <li><a  class="link_" onclick="prices()" style="cursor: pointer; color: white;">Цены</a></li>
                 <li><a  class="link_" onclick="call_request()" style="cursor: pointer; color: white;">Оставить заявку</a></li>
@@ -269,8 +268,7 @@ background-attachment: fixed;
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-<div class="well well-lg" id="info"><h4>И снова здравствуйте! Добро пожаловать на обновленный сайт проекта R1. С помощью данного сервиса вы можете заказать для себя разработку любого современного сайта,
-    интернет магазина, в общем для решения любого вопроса в области ИТ. Также если Вы из города Астрахань возможен ремонт компьютерной техники, такие как ноутбуки, компьютеры, заказ и консультация по подбору комплектующих. За подробностями в FAQ</h4></div>
+<div class="well well-lg" id="info"><h4>Привет! Нужна помощь в ремонте компьютера или создании вебприложения? Тогда ты по адресу! За подробностями в FAQ</h4></div>
 
 <div id="feedbacks"  class="alert alert-info" role="alert" draggable="true">
 
@@ -291,6 +289,23 @@ document.write(VK.Share.button());
 </div>
 <br><br>
 <div class="fb-share-button" style="position: absolute; right: 0;  text-align:right;" data-href="http://roman1.technology/ru" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Froman1.technology%2Fru&amp;src=sdkpreparse">Поделиться</a></div>
+<br><br>
+
+<footer  class="site-footer">
+
+</footer>
+
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <br>
+        <h5 color="#ffffff"> +79608607763, Russia, Astrakhan <br><a href=\"mailto:xnucleargeminix@aol.com"> email</a><br>
+            <a href="https://vk.com/roland_x"> <i class="fa fa-vk" aria-hidden="true"></i> </a>
+            <a href="https://www.facebook.com/roman.pastushkov"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+            <br> 2017 Roman Pastushkov. All rigths reserved</h5>
+    </div>
+</footer>
+
 
 </body>
 </html>
