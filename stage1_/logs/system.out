@@ -1,7 +1,6 @@
-Listening for transport dt_socket at address: 45737
-12:10:58,031 INFO  ~ Starting /root/docker/stage1_
-12:11:02,137 WARN  ~ You're running Play! in DEV mode
-12:11:02,375 INFO  ~ Listening for HTTP on port 80 (Waiting a first request to start) ...
+Listening for transport dt_socket at address: 8000
+08:55:21,711 INFO  ~ Starting /root/docker_inter/stage1_
+08:55:26,633 WARN  ~ You're running Play! in DEV mode
+08:55:26,892 INFO  ~ Listening for HTTP on port 80 (Waiting a first request to start) ...
 ~ Server is up and running
-12:11:11,716 INFO  ~ Application 'stage1' is now started !
-inside feedback
+08:56:26,618 INFO  ~ Application 'stage1' is now started !

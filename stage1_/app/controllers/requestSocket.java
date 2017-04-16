@@ -18,7 +18,7 @@ public class requestSocket extends WebSocketController  {
     public static String info;
 
     public static void request(String param) throws InterruptedException, IOException  {
-        outbound.send("<h2>Заказ принят ;-) ");
+        outbound.send("success");
         System.out.print(param);
 
         Date d = new Date();

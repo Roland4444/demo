@@ -31,9 +31,6 @@ public class feedbackSocket extends WebSocketController  {
        // sw.write("comment>"+comment+"\r\n");
         //sw.write("name>>>>"+name+"comment>>>>"+comment+"date>>>>"+format1.format(d)+"\r\n");
         sw.close();
-        outbound.send("<h2>СПАСИБО!<br></h3>"+
-                "<h3>Ваш отзыв будет выглядеть следующим образом</h4><br>"+
-                "<div class=\"panel panel-info\" style=\"font-family: museosans2;\" ><h4 ><i>"+name+" написал(а): </i> </h4><br><h4><i>"+comment+"</i></h4></div>");
-
+        outbound.send("OK");
     }
 }

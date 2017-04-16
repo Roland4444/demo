@@ -3,16 +3,20 @@
 # ~~~~
 
 # Home page
-#GET   /                                       Application.index
-WS     /helloSocket                             MyWebSocket.hello
-GET    /info                                    Application.info
-GET    /                                         Application.spa
-WS     /feedback                                feedbackSocket.feedback
-WS     /request                                 requestSocket.request
-GET    /feedback 				Application.spa
-GET	/contacts				Application.spa
-GET	/faq					Application.spa
-GET	/contacts				Application.spa
+
+#WS     /helloSocket                             MyWebSocket.hello
+GET    /info    Application.info
+GET    /        Application.spa
+GET    /en      Application.en
+GET    /ru      Application.ru
+GET    /es      Application.es
+WS     /feedback    feedbackSocket.feedback
+WS     /request     requestSocket.request
+GET    /feedback    Application.spa
+GET	/contacts   Application.spa
+GET	/faq        Application.spa
+GET	/contacts   Application.spa
+WS  /info       info.info
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -1,128 +1,51 @@
-#menu {
-font-family: franklin;
-align: left;
-    background-color: 	#252626;
-    width: 20%;
-    position: absolute;
-    height: 130%;
-    color: silver;
-}
 
-#menu ul { list-style: none;
- align: left;
- }
-
-.button {
- font-family: franklin;
-    background-color: #252626;
-    border: none;
-    color: #38C4F2;
-    padding: 10px 22px;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    font-size: 20px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-
-}
-
-.button1 {
-    width: 100%;
-    font-family: franklin;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.button2:hover {
-    width: 100%;
-    font-family: franklin;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    font-size: 23px;
-}
+  @font-face {
+        font-family: franklin;
+        src: url(public/font/FranklinGothicHeavy.ttf);
+      }
+      @font-face {
+        font-family: glyphicons;
+        src: url(public/font/glyphicons-halflings-regular.ttf);
+      }
+      @font-face {
+        font-family: choplin;
+        src: url(public/font/Choplin-Medium-DEMO.otf);
+      }
+      @font-face {
+              font-family: museosans;
+              src: url(public/font/MuseoSansCyrl.otf);
+      }
+      @font-face {
+              font-family: museosans2;
+              src: url(public/font/MuseoSansCyrl_3.otf.otf);
+      }
 
 
-
-#logonsector {
-    padding: 5px;
-    padding-right: 20px;
-		color: silver;
-    float: right;
-    vertical-align: top;
-    display: inline-block;
-    font-family: monospace;
-    font-size: 85%;
-}
-#logonsector a{
-    font-family: sans;
-
-}
-
-#logonsector a:link {
-    color: silver;
-}
-    /* visited link */
-#logonsector a:visited {
-    color: silver;
-}
-
-    /* mouse over link */
-#logonsector a:hover {
-    color: white;
-}
-
-    /* selected link */
-#logonsector a:active {
-    color: silver;
-}
-
-#logonsector input{
-    maxlength="15" size="30"
-}
-
-#banner {
-
-        display: inline-block;
-}
-
-#top {
-       border: solid 1px black;
-
-}
-
-#content {
-       border: solid 1px black;
-
-}
 
 #info{
+ background-color: white;
 font-family: museosans;
-    display: inline-block;
-
-    font-size: 150%;
-    padding: 0% 0% 0% 25%;
-    color: white;
-	align: rigth;
+color: #3399ff;
 }
 #info a {
-  color: silver;
+  color: blue;
    }
 #info a:link {
-    color: silver;
+    color: blue;
 }
     /* visited link */
 #info a:visited {
-    color: silver;
+    color: blue;
 }
 
     /* mouse over link */
 #info a:hover {
-    color: white;
+    color: blue;
 }
 
     /* selected link */
 #info a:active {
-    color: silver;
+    color: blue;
 }
 
 
@@ -132,4 +55,36 @@ font-family: museosans;
     left: 70px;
     position: relative;
     display: block;
+}
+
+.navbar-brand  {
+
+    border: none;
+    color: #38C4F2;
+    padding: 10px 22px;
+    color: #123456;
+    background-color: #000000;
+    border-color: #556667;
+}
+
+    .container-fluid  {
+    background-color: #3399ff;
+    border-color: #ffffff;
+}
+
+.container-fluid a:hover {
+    color: red;
+}
+
+
+
+
+
+.link_  a{
+  color: red;
+  cursor: pointer;
+   }
+
+.jumbotron {
+    background-color: #ffffff;
 }
